@@ -1,0 +1,128 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+body, ul, dl, dd, p, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color:transparent;
+}
+
+img {
+    vertical-align: middle;
+}
+input{
+	border:0;
+	outline: none;
+}
+
+ul {
+    list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.line {
+    border: 1px solid #ccc;
+    transform: rotateZ(-30deg);
+}
+#layout {
+    width: 20rem;
+    margin: 0 auto;
+}
+@media (width: 640px) {
+    #homePage {
+        #content {
+            .content-information {
+                > p {
+                    line-height: 32/32rem !important;
+                }
+            }
+        }
+    }
+
+    #secondPage {
+        .aboutMe {
+            .footer {
+                display: none;
+            }
+        }
+    }
+    #thirdPage {
+        .skill {
+            overflow: hidden;
+            .footer {
+                display: none;
+            }
+        }
+    }
+    .timeline {
+        display: none;
+    }
+
+    #fifth {
+        .product {
+            width: 20rem;
+            margin-top: 10 /32rem;
+                ul {
+                    width: 20rem;
+                    border-bottom: 2/32rem solid red;
+                    li:nth-child(3) {
+                            display: none;
+                        }
+                    li:nth-child(4) {
+                        display: none;
+                    }
+                }
+
+        }
+        .moreDemo {
+            margin: 10 /32rem;
+            p {
+                font-size: 24 / 32rem;
+                line-height: 28 /32rem;
+                a {
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+            p:first-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    #secondPage {
+        .aboutMe {
+            .aboutMe-info {
+                p {
+                    font-size: 14 /32rem;
+                    line-height: 40 /32rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

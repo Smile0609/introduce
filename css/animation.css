@@ -1,0 +1,348 @@
+/*第二屏动画*/
+.current .aboutMe .aboutMe-title>span:first-child {
+    animation: aboutMeSpan 1s ease-in;
+    animation-fill-mode: forwards;
+}
+.current .aboutMe .aboutMe-title>span:last-child {
+    animation: aboutMeSpanS 1s ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes aboutMeSpan {
+    0% {
+        transform:translateX(-210px);
+    }
+    50% {
+        transform:translateX(-105px);
+    }
+    100% {
+        transform:translateX(0px);
+    }
+}
+@keyframes aboutMeSpanS {
+    0% {
+        transform:translateX(220px);
+    }
+    50%{
+        transform:translateX(110px);
+    }
+    100% {
+        transform:translateX(0px);
+    }
+}
+
+/*第三屏动画*/
+.current .skill .aboutMe-title span {
+    animation: skill 2s linear;
+    animation-fill-mode: forwards;
+    transition: all 2s linear;
+}
+
+.current>.skill>p {
+    transition: all 1s linear;
+    animation: skillP 2s ease-out 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes skill {
+    0% {
+        opacity:0;
+        transform: rotateZ(360deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotateZ(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes skillP {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*第四屏动画*/
+
+.current .myLive .aboutMe-title span:first-child {
+    animation: myLiveSpan 2s ease-in;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out;
+}
+
+.current .myLive .aboutMe-title span:last-child {
+    animation: myLiveSpanL 2s ease-in 2s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out;
+}
+
+.current .myLive>p {
+    animation: myLiveP 2s ease-in 3s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out;
+}
+
+.current .myLive .workExperience {
+    animation: myLiveWork 2s ease-in 4s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out;
+}
+.current .myLive .timeline {
+    animation: myLiveWork 2s ease-in 4s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-out;
+}
+
+@keyframes myLiveSpan {
+     0% {
+         transform: translate(300px,300px);
+     }
+     50% {
+         transform: translate(150px,150px);
+
+     }
+     100% {
+         transform: translate(0,0);
+
+     }
+ }
+@keyframes myLiveSpanL {
+    0% {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotateX(180deg);
+
+    }
+    100% {
+        opacity:1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes myLiveP {
+    0% {
+        transform: translateX(600px);
+    }
+    50% {
+        transform: translateX(300px);
+
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes myLiveWork {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+
+/*第五屏动画*/
+
+.current .myProduct .aboutMe-title {
+    animation: myProduct 2s ease-in;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in;
+}
+.current .myProduct>p {
+    animation: myProductP 2s ease-in 2s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in;
+}
+
+.current .myProduct .product ul li:nth-child(1) {
+    animation: product 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.current .myProduct .product ul li:nth-child(2) {
+    animation: product 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.current .myProduct .product ul li:nth-child(3) {
+    animation: product 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.current .myProduct .product ul li:nth-child(4) {
+    animation: product 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+.current .myProduct .product ul {
+    animation: product 1s ease-in;
+    animation-fill-mode: forwards;
+}
+.current .myProduct .moreDemo {
+    animation: product 1s ease-in;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in;
+}
+@keyframes myProduct {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-100px);
+
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes myProductP {
+    0% {
+        opacity: 0;
+        transform: rotateY(360deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotateY(180deg);
+
+    }
+    100% {
+        opacity:1;
+        transform: rotateY(0deg);
+    }
+}
+@keyframes product {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/*第六平动画*/
+.current .call-me .aboutMe-title {
+    animation: callMe 2s linear;
+    animation-fill-mode: forwards;
+    transition: all 1s linear;
+}
+.current .call-me > p:nth-of-type(1){
+    animation: callMeP 2s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.current .call-me > p:nth-of-type(2) span:nth-child(1) {
+    animation: callMeP 2s linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.current .call-me > p:nth-of-type(2) span:nth-child(2) {
+    animation: callMeP 2s linear;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.current .call-me > p:nth-of-type(2) span:nth-child(3) {
+    animation: callMeP 2s linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+.current .call-me > p:nth-of-type(2) span:nth-child(4) {
+    animation: callMeP 2s linear;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.current .call-me>ul li:nth-child(1) {
+    animation: callMeUl 2s ease-out;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+.current .call-me>ul li:nth-child(2) {
+    animation: callMeUl 2s ease-out;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.current .call-me>ul li:nth-child(3) {
+    animation: callMeUl 2s ease-out;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+.current .call-me>ul li:nth-child(4) {
+    animation: callMeUl 2s ease-out;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes callMe {
+    0% {
+        opacity: 0;
+        transform: rotateZ(360deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotateZ(180deg);
+
+    }
+    100% {
+        opacity:1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes callMeP {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes callMeUl {
+    0% {
+        opacity: 0;
+        transform: translateY(600px);
+    }
+    50% {
+        opacity:0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0px);
+    }
+}

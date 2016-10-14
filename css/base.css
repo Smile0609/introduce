@@ -1,0 +1,109 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+body,
+ul,
+dl,
+dd,
+p,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  vertical-align: middle;
+}
+input {
+  border: 0;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.line {
+  border: 1px solid #ccc;
+  transform: rotateZ(-30deg);
+}
+#layout {
+  width: 20rem;
+  margin: 0 auto;
+}
+@media (width: 640px) {
+  #homePage #content .content-information > p {
+    line-height: 1rem !important;
+  }
+  #secondPage .aboutMe .footer {
+    display: none;
+  }
+  #thirdPage .skill {
+    overflow: hidden;
+  }
+  #thirdPage .skill .footer {
+    display: none;
+  }
+  .timeline {
+    display: none;
+  }
+  #fifth .product {
+    width: 20rem;
+    margin-top: 0.3125rem;
+  }
+  #fifth .product ul {
+    width: 20rem;
+    border-bottom: 0.0625rem solid red;
+  }
+  #fifth .product ul li:nth-child(3) {
+    display: none;
+  }
+  #fifth .product ul li:nth-child(4) {
+    display: none;
+  }
+  #fifth .moreDemo {
+    margin: 0.3125rem;
+  }
+  #fifth .moreDemo p {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
+  #fifth .moreDemo p a {
+    font-weight: bold;
+    color: #000;
+  }
+  #fifth .moreDemo p:first-child {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  #secondPage .aboutMe .aboutMe-info p {
+    font-size: 0.4375rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}
