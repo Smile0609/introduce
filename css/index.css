@@ -867,12 +867,12 @@ ul {
 }
 #layout > #footer .footer {
   height: 2.03125rem;
-  font-size: 0.375rem;
+  font-size: 0.75rem;
   width: 20rem;
   border-top: 0.0625rem solid #ccc;
 }
 #layout > #footer .footer ul {
-  font-size: 0.375rem;
+  font-size: 0.75rem;
   width: 10rem;
   margin: 0 auto;
   text-align: center;
