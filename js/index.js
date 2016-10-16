@@ -90,7 +90,7 @@ function slider() {
             //aArr[i].onclick = function () {
             //    animate(-liWidth*this.index,slider);
             //}
-            aArr[i].addEventListener('click', function () {
+            aArr[i].addEventListener('touchstart', function () {
                 animate(-liWidth*this.index,slider);
             })
         }
