@@ -87,9 +87,12 @@ function slider() {
         for(var i=0;i<aArr.length;i++){
             //属性绑定，获取索引值
             aArr[i].index = i;
-            aArr[i].onclick = function () {
+            //aArr[i].onclick = function () {
+            //    animate(-liWidth*this.index,slider);
+            //}
+            aArr[i].addEventListener('click', function () {
                 animate(-liWidth*this.index,slider);
-            }
+            })
         }
     }
 //匀速框架
@@ -102,5 +105,5 @@ function slider() {
                 obj.style.left = target+"px";
                 clearInterval(obj.timer);
             }
-        },30);
+        },20);
 }
