@@ -90,7 +90,7 @@ function slider() {
             //aArr[i].onclick = function () {
             //    animate(-liWidth*this.index,slider);
             //}
-            aArr[i].addEventListener('mouseenter', function () {
+            aArr[i].addEventListener('singleTap', function () {
                 animate(-liWidth*this.index,slider);
             })
         }
