@@ -124,7 +124,7 @@
     }
     100% {
         opacity:1;
-        transform: rotateZ(0deg);
+        transform: rotateX(0deg);
     }
 }
 
