@@ -90,8 +90,9 @@ function slider() {
             //aArr[i].onclick = function () {
             //    animate(-liWidth*this.index,slider);
             //}
-            aArr[i].addEventListener('singleTap', function () {
+            aArr[i].addEventListener('touchend', function () {
                 animate(-liWidth*this.index,slider);
+                e.preventDefault();
             })
         }
     }
